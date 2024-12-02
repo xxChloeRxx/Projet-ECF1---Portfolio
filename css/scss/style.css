@@ -1,12 +1,70 @@
+@font-face {
+  font-family: "Nico";
+  src: url("../../assets/fonts/NicoMoji-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Jet";
+  src: url("../../assets/fonts/JetBrainsMono-VariableFont_wght.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
 html {
   background-color: #FF005E;
-  margin: 5em;
+  margin: 3em;
 }
 html main {
   background-color: #000000;
   color: #FF005E;
   padding: 2em;
+  font-family: "Jet", sans-serif;
+  display: flex;
+  flex-direction: row;
 }
 html main h1, html main h2, html main h3, html main h4, html main h5, html main h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nico", sans-serif !important;
+}
+html main #p1 {
+  margin-top: -4em;
+  margin-left: -5.5em;
+  font-size: 0.7em;
+}
+html main #p1 li {
+  margin-left: 2em;
+  background-color: #C6024A;
+}
+
+.block1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.mini_present {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  color: black !important;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  list-style: none;
+}
+
+.maxi-present {
+  border-width: 3em 0.3em 0.3em 0.3em !important;
+  border-style: solid;
+  border-color: #FF005E;
+}
+
+.navigation {
+  border-width: 3em 0.3em 0.3em 0.3em !important;
+  border-style: solid;
+  border-color: #FF005E;
+  margin-left: 1em;
 }/*# sourceMappingURL=style.css.map */
