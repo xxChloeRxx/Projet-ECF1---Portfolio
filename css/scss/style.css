@@ -6,4 +6,7 @@ html main {
   background-color: #000000;
   color: #FF005E;
   padding: 2em;
+}
+html main h1, html main h2, html main h3, html main h4, html main h5, html main h6 {
+  font-family: "Roboto", sans-serif;
 }/*# sourceMappingURL=style.css.map */
