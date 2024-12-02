@@ -13,15 +13,14 @@
 | 5 | Chloé |
 | P5 | Page de contact | Haute | A Faire
 | 5 | Chloé |
-| P6 | Page Portfolio| Moyenne | À faire
+| P6 | Page Portfolio| Haute | À faire
 | 3 | Chloé |
-| P7 | Page Mention légale| Moyenne | A Faire
+| P7 | Page Mention légale| Haute | A Faire
 | 3 | Chloé |
 | P8 |Fonction JS: click interactif sur la page d'accueil| Moyenne | A Faire
 | 3 | Chloé |
 
 ## **User Stories**
-Les user stories décrivent les fonctionnalités du point de vue de l'utilisateur.
 ### **User Story 1: Recherche de livre**
 **En tant que** utilisateur,
 **Je veux** pouvoir rechercher un livre par titre ou auteur.
@@ -44,24 +43,24 @@ Les user stories décrivent les fonctionnalités du point de vue de l'utilisateu
 ## **Sprints**
 Les sprints sont des périodes définies au cours desquelles une partie du travail
 est accomplie.
-### **Sprint 1 - (8h00 - 9h30 14 Nov 2024)**
-- **Objectif du Sprint** : Créer la page d’accueil et intégrer CSS/Bootstrap
+### **Sprint 1 - (8h00 - 12h30 2 Dec 2024)**
+- **Objectif du Sprint** : Commencer la création du projet
 - **Tâches** :
- - Création des pages Accueil, liste & contact
- - Wireframe des pages
- - Mise en place de la structure HTML/CSS
+ - Créer Hiéararchie des pages
+ - Commencer la documentation
+ - Réflechir sur les wireframe
 - **Responsables** : Chloé
 - **Estimation de points** : 13
 #### **Backlog Sprint 1** :
-- Création HTML
-- Ajout bootsrap/scss
-- Ajout fonction js pour la recherche
+- Création hiérarchie du projet
+- Création idendité graphique du portfolio + maquette page accueil
+- démarrag tableau kaban et documentation
 ---
-### **Sprint 2 - (9h30 - 12h00 14 Nov 2024)**
-- **Objectif du Sprint** : Créer page livre et contact
+### **Sprint 2 - (13h30 - 17h00 2 Dec 2024)**
+- **Objectif du Sprint** : Réfléchir au fonctionnement du projet, création du squelette HTML principal
 - **Tâches** :
- - Création des pages liste & contact
- - Ajout des cartes pour la page liste
+ - Création squelette HTML
+ - Ajout documentation
  - Ajout du formulaire pour la page contact
  - Vérifier le responsive des pages
 - **Responsables** : Chloé
@@ -71,41 +70,11 @@ est accomplie.
 - Ajout bootsrap/scss
 - Ajout fonction js recherche
 ---
-### **Sprint 3 - (13h - 15h00 14 Nov 2024)**
-- **Objectif du Sprint** : Créer page livre et contact
-- **Tâches** :
- - Création des pages liste & contact
- - Ajout des cartes pour la page liste
- - Ajout du formulaire pour la page contact
- - Vérifier le responsive des pages
-- **Responsables** : Chloé
-- **Estimation de points** : 13
-#### **Backlog Sprint 3** :
-- Création HTML
-- Ajout bootsrap/scss
-- Ajout fonction pseudocode js tri et filtre
----
-### **Sprint 4 - (15h - 17h00 14 Nov 2024)**
-- **Objectif du Sprint** : Finaliser responsive + terminer documentation
-- **Tâches** :
- - Implémenter responsive
- - Vérifier le fonctionnement des pages
- - Compléter la documentation
-- **Responsables** : Chloé
-- **Estimation de points** : 13
-#### **Backlog Sprint 4** :
-- Finalisation site
-- Finalisation documentation
----
----
 ## **Rétrospective**
 ### Sprint 1 :
 - **Ce qui a bien fonctionné** :
- - Ajout du CSS en incluant les colonnes bootstraps
- - Les wireframes ont été bien respectés.
+ - Maquettage de la page accueil
 - **Ce qui peut être amélioré** :
- - Le responsive
- - La validation du formulaire
 
 ### Sprint 2 :
 - **Ce qui a bien fonctionné** :

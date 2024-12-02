@@ -1,4 +1,16 @@
-@use 'mixins';
-@use 'fonts';
-@use 'extends';
-@use 'colors';
+@import 'mixins';
+@import 'fonts';
+@import 'extends';
+@import 'colors';
+html {
+    background-color: $accent;
+    margin: 5em;
+
+    main {
+        background-color: $primary-color;
+        color: $accent;
+        padding: 2em;
+    }
+
+}
+
