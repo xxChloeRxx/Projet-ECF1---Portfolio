@@ -1,7 +1,16 @@
-@mixin border{
-    border-width: 3em 0.3em 0.3em 0.3em !important;
-    border-style: solid;
-    border-color: $accent;
+@mixin borderR{
+    border-right: 0.5em groove $accent;
+    border-bottom: 0.5em groove $accent;
+}
+
+@mixin borderL{
+    border-left: 0.5em groove $accent;
+    border-bottom: 0.5em groove $accent;
+}
+
+@mixin roundBorder{
+    border-radius: 50em;
+    border: 0.5em solid $accent;
 }
 
 @mixin falseNav{
@@ -12,3 +21,25 @@
     align-items: center;
     list-style: none;
 }
+
+@mixin zoom-effect {
+    transition: transform 0.3s ease;  
+}
+@mixin button-style{
+    padding: 0.5em;
+    font-family: 'Nico';
+    color: black;
+    background-color: $accent;
+    border: 1em groove $accent;
+    @include zoom-effect;
+
+    &:hover{
+            transform: scale(1.1);
+            color: $accent;
+    }
+}
+
+@mixin link{
+    text-decoration: none;
+}
+

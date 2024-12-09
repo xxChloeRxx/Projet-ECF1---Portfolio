@@ -1,0 +1,255 @@
+@font-face {
+    font-family: 'Arial';
+    src: url(../fonts/arial/ARIAL.TTF);
+}
+
+html{
+    font-family: Arial, sans-serif;
+}
+
+nav{
+    background-color: rgb(120, 190, 32);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.links{
+    margin-top: 2.4em;
+}
+
+.links a{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    height: 40px;
+}
+
+.footer {
+    background-color: rgb(120, 190, 32);
+    color: white;
+    padding: 1em;
+}
+
+.footer ul{
+    margin-top: 0.7em;
+}
+
+h3{
+    font-weight: bold;
+}
+
+.button_form{
+    background-color: rgb(120, 190, 32);
+    color: black;
+    border: none;
+    height: 50px;
+    width: 100px;
+   display: flex;
+   justify-content: center;
+}
+
+.button_form{
+    background-color: rgb(136, 190, 70);
+}
+
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.sousinfo{
+    position: relative;
+    top: 6px;
+    left: 4px;
+}
+
+header{
+    height: 70px;
+}
+
+.main_footer{
+    padding: 50px;
+}
+
+ul, li{
+    display: inline;
+    list-style: none;
+}
+
+a:hover{
+    color: rgb(192, 228, 147);
+}
+
+.searchbox{
+    height: 40px;
+    margin-top: 2em;
+    position: relative; 
+    border: white solid 5px;
+    border-radius: 6px;
+}
+
+.bouton_user{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.bouton_formation, .boutonenvoyer{
+    border: 2px solid rgb(120, 190, 32);
+    color: white;
+    width:190px;
+}
+
+.box{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box1, .box2{
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 500px;
+    height: 550px;
+    margin-left: 100px;
+    position:relative;
+    text-align: justify;
+}
+
+.logopart{
+    background-color: rgb(120, 190, 32);
+    margin-left: 20px;
+    height: 80px;
+    width: 92px;
+}
+
+h1{
+    text-align: center;
+    background: -webkit-linear-gradient(rgb(120, 190, 32), black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bouton_user{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    height: 100px;
+}
+
+.button{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:rgb(120, 190, 32);
+    color: white;
+}
+
+.button:hover {
+    background-color: #c4c4c4;
+}
+
+.test1, .test2, .test3{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: -10px;
+    border: 2px solid rgb(120, 190, 32);
+    border-radius: 40px;
+    height: 630px;
+    width: 450px;
+    padding: 20px;
+    box-shadow: 10px 5px 5px rgb(173, 173, 173);
+}
+
+.edit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bouton1{
+    position: relative;
+    right: 500px;
+}
+
+.bouton3{
+    position: relative;
+    left: 500px;
+}
+
+.bouton1, .bouton2, .bouton3{
+    height: 60px;
+    position: relative;
+    bottom: 35px;
+}
+
+blockquote{
+    text-align: justify;
+}
+
+main{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.portrait{
+    height: 90px;
+    width: 90px;
+    float: right;
+}
+
+.pageindex{
+    text-align: center;
+}
+
+.partners{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: row;
+}
+
+.row1, .row2, .row3{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+}
+
+.boutonenvoyer{
+    display:flex;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.testimonies{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+a{
+    text-decoration: none;
+    color: white; 
+}
