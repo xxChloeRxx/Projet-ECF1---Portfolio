@@ -1,6 +1,7 @@
 # Projet-ECF1---Portfolio
 Evaluation ECF 1 partie Front End
 
+
 ### 2/12/2023:
 Création du projet Portfolio. J'ai créé le dossier ainsi que tout les fichiers vierges nécessaires afin a ne pas avoir à chercher et perdre du temps.
 Création du début de la documentation, réfléction sur la  disposition des éléments sur la page d'accueil et de l'idendité graphique. Choix de la couleur de fond, de la police et de la taille du texte: #FF005E(rose) et noir afin de créer un contraste pour attirer l'oeil. Choix de la police "Nico Moji" pour les titres et textes imortants et "JetBrains Mono" pour le reste. 
@@ -26,3 +27,5 @@ Création du squelette HTML de la page d'accueil. Implémentation des différent
 Ajout JS pour rendre la page d'accueil dynamique. Révision du SCSS pour ajouter des effets visuels. Mise en place du carrousel d'image.
 
 ### 9/12/2023:
+=======
+
