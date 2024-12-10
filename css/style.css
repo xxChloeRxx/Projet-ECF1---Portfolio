@@ -213,25 +213,6 @@ html body main .gallery-wrapper .gallery4-text h2 {
   text-decoration: underline;
   font-family: "Nico", sans-serif;
 }
-html body main .gallery-wrapper input#name, html body main .gallery-wrapper input#email, html body main .gallery-wrapper input#phone {
-  width: 31em;
-  color: rgb(255, 0, 94) !important;
-}
-html body main .gallery-wrapper input, html body main .gallery-wrapper select, html body main .gallery-wrapper textarea {
-  margin-top: 2em;
-  padding: 1em;
-  background-color: #000000;
-  border: #C6024A solid 0.2em;
-  border-radius: 0.3em;
-}
-html body main .gallery-wrapper .botn {
-  margin-left: 13em;
-  padding: 1em;
-  background-color: rgb(255, 0, 94) !important;
-}
-html body main .gallery-wrapper .botn:hover {
-  background-color: #C6024A;
-}
 html body .cont-2 {
   border-right: 0.5em groove rgb(255, 0, 94);
   border-bottom: 0.5em groove rgb(255, 0, 94);
@@ -273,6 +254,26 @@ html body .carousel img:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 12px #C6024A;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+html body input#name, html body input#email, html body input#phone {
+  width: 31em;
+  color: rgb(255, 0, 94) !important;
+}
+html body input, html body select, html body textarea {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: #000000;
+  border: #C6024A solid 0.2em;
+  border-radius: 0.3em;
+}
+html body .botn {
+  margin-left: 13em;
+  padding: 1em;
+  background-color: rgb(255, 0, 94) !important;
+  font-family: "Nico", sans-serif;
+}
+html body .botn:hover {
+  background-color: #C6024A;
 }
 html footer {
   display: flex;

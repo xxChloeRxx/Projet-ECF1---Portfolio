@@ -207,25 +207,6 @@ html {
                       font-family: 'Nico', sans-serif;
                     }
                   }
-                    input#name, input#email, input#phone {
-                      width: 31em;
-                      color: $accent!important;
-                  }
-                    input, select, textarea{
-                      margin-top: 2em;
-                      padding: 1em;
-                      background-color: $primary-color;
-                      border: $darker-accent solid 0.2em;
-                      border-radius: 0.3em;
-                  }
-                    .botn{
-                      margin-left: 13em;
-                      padding: 1em;
-                      background-color: $accent !important;
-                    }
-                    .botn:hover{
-                      background-color: $darker-accent;
-                    }
               }
          }
       .cont-2{
@@ -267,6 +248,26 @@ html {
           transform: scale(1.05);
           box-shadow: 0 6px 12px $darker-accent; 
           transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      input#name, input#email, input#phone {
+        width: 31em;
+        color: $accent!important;
+    }
+      input, select, textarea{
+        margin-top: 2em;
+        padding: 1em;
+        background-color: $primary-color;
+        border: $darker-accent solid 0.2em;
+        border-radius: 0.3em;
+    }
+      .botn{
+        margin-left: 13em;
+        padding: 1em;
+        background-color: $accent !important;
+        font-family: 'Nico', sans-serif;
+      }
+      .botn:hover{
+        background-color: $darker-accent;
       }
       
   }
