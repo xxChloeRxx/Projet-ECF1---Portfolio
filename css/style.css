@@ -37,6 +37,12 @@ html body header #menu h2 {
 html body header #menu h2.active {
   color: #C6024A;
 }
+html body header a {
+  text-decoration: none;
+  color: rgb(255, 0, 94);
+  font-size: 1.5em;
+  margin-top: 0.3em;
+}
 html body main {
   background-color: #000000;
   color: rgb(255, 0, 94);
@@ -126,17 +132,86 @@ html body main .gallery-wrapper .gallery-caption {
   text-align: center;
   margin-top: 0.5em;
 }
+html body main .gallery-wrapper #mainCarousel .carousel-caption {
+  color: rgb(255, 0, 94);
+  font-size: 0.7em;
+  background-color: rgba(2, 0, 0, 0.7);
+  border: rgb(255, 0, 94) solid 0.2em;
+  border-radius: 2em;
+}
+html body main .gallery-wrapper #mainCarousel .carousel-caption a {
+  text-decoration: none;
+  color: rgb(255, 0, 94);
+}
+html body main .gallery-wrapper #mainCarousel .carousel-caption a:hover {
+  text-decoration: underline;
+}
 html body main .gallery-wrapper .carousel-control-prev-icon,
 html body main .gallery-wrapper .carousel-control-next-icon {
   background-color: rgb(255, 0, 94);
 }
-html body main .gallery-wrapper .gallery-text {
+html body main .gallery-wrapper .gallery-text p {
   border-left: 0.5em groove rgb(255, 0, 94);
   border-bottom: 0.5em groove rgb(255, 0, 94);
   margin-top: 2em;
   width: 28em;
   padding: 0.5em;
   margin-bottom: 4em;
+}
+html body main .gallery-wrapper .gallery1-text {
+  border-right: 0.5em groove rgb(255, 0, 94);
+  border-bottom: 0.5em groove rgb(255, 0, 94);
+  margin-bottom: 3em;
+  padding: 1em;
+}
+html body main .gallery-wrapper .gallery1-text h2 {
+  margin-bottom: 1em;
+  text-decoration: underline;
+  font-family: "Nico", sans-serif;
+}
+html body main .gallery-wrapper .gallery2-text {
+  text-align: center;
+  margin-bottom: 3em;
+  padding: 1em;
+}
+html body main .gallery-wrapper .gallery2-text h2 {
+  margin-bottom: 1em;
+  text-decoration: underline;
+  font-family: "Nico", sans-serif;
+}
+html body main .gallery-wrapper .gallery2-text .fa, html body main .gallery-wrapper .gallery2-text .fas, html body main .gallery-wrapper .gallery2-text .fa-brands {
+  font-size: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+html body main .gallery-wrapper .gallery3-text {
+  text-align: center;
+  margin-bottom: 3em;
+  padding: 1em;
+}
+html body main .gallery-wrapper .gallery3-text h2 {
+  margin-bottom: 1em;
+  text-decoration: underline;
+  font-family: "Nico", sans-serif;
+}
+html body main .gallery-wrapper .gallery3-text ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+html body main .gallery-wrapper .gallery3-text ul li {
+  margin-right: 1em;
+  font-size: 1.2em;
+}
+html body main .gallery-wrapper .gallery4-text {
+  margin-bottom: 3em;
+}
+html body main .gallery-wrapper .gallery4-text h2 {
+  margin-bottom: 1em;
+  text-decoration: underline;
+  font-family: "Nico", sans-serif;
 }
 html body main .gallery-wrapper input#name, html body main .gallery-wrapper input#email, html body main .gallery-wrapper input#phone {
   width: 31em;
@@ -156,20 +231,6 @@ html body main .gallery-wrapper .botn {
 }
 html body main .gallery-wrapper .botn:hover {
   background-color: #C6024A;
-}
-html body #mainCarousel .carousel-caption {
-  color: rgb(255, 0, 94);
-  font-size: 0.7em;
-  background-color: rgba(2, 0, 0, 0.7);
-  border: rgb(255, 0, 94) solid 0.2em;
-  border-radius: 2em;
-}
-html body #mainCarousel .carousel-caption a {
-  text-decoration: none;
-  color: rgb(255, 0, 94);
-}
-html body #mainCarousel .carousel-caption a:hover {
-  text-decoration: underline;
 }
 html body .cont-2 {
   border-right: 0.5em groove rgb(255, 0, 94);
@@ -203,6 +264,16 @@ html body .cont-3 p {
   text-align: start;
   padding-top: 1.5em;
 }
+html body .carousel img {
+  border: 0.5em groove rgb(255, 0, 94);
+  box-shadow: 0 4px 8px #C6024A;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+html body .carousel img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px #C6024A;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 html footer {
   display: flex;
   flex-direction: row;
@@ -223,44 +294,7 @@ html footer a:hover {
   text-decoration: underline;
 }
 
-.carousel img {
-  border: 0.5em groove rgb(255, 0, 94);
-  box-shadow: 0 4px 8px #C6024A;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.carousel img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px #C6024A;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 /* ANNIMATIONS */
-.bounce {
-  display: inline-block;
-  animation: bounce 1s ease infinite;
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-30px);
-  }
-}
-.spinning {
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .glow {
   animation: glow 1.5s ease-in-out infinite alternate;
 }
@@ -292,27 +326,6 @@ html footer a:hover {
     opacity: 0;
   }
 }
-.typewriting {
-  border-right: 4px solid rgb(255, 0, 94);
-  width: 2ch;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 4s steps(20) 1s 1 normal both, blink 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 34ch;
-  }
-}
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
 .fade-in {
   opacity: 0;
   animation: fadeIn 2s ease-in forwards;
@@ -326,20 +339,18 @@ html footer a:hover {
     opacity: 1;
   }
 }
-/* Initial state for sliding animations */
 .slide-element {
-  transition: transform 0.5s ease-in-out; /* Smooth transition */
+  transition: transform 0.5s ease-in-out;
 }
 
 .slide-left {
-  transform: translateX(-100%); /* Starts off-screen to the left */
+  transform: translateX(-100%);
 }
 
 .slide-right {
-  transform: translateX(100%); /* Starts off-screen to the right */
+  transform: translateX(100%);
 }
 
-/* Final state when the element is in view */
 .in-view {
-  transform: translateX(0); /* Moves to its normal position */
+  transform: translateX(0);
 }/*# sourceMappingURL=style.css.map */

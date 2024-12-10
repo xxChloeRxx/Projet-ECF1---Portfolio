@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const galleryTitles = {
       gallery1: ' < Maquettes & Sites Web > ',
       gallery2: ' < Mon CV > ',
-      gallery3: ' < Me Contacter > ',
     };
 
     // Ajoute les titres des galeries
@@ -89,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
           // Deuxième section : Compétences
           const textDiv2 = document.createElement('div');
           textDiv2.innerHTML = `
-            <h2>Compétences</h2>
+            <h2>Competences</h2>
             <i class="fa-brands fa-figma"></i>
             <i class="fa fa-html5" aria-hidden="true"></i>
             <i class="fa fa-css3" aria-hidden="true"></i>
@@ -129,35 +128,6 @@ document.addEventListener('DOMContentLoaded', () => {
           `;
           textDiv4.classList.add('gallery4-text');
           galleryWrapper.appendChild(textDiv4);
-        }
-
-        // Ajout contenu gallery3
-        if (galleryId === 'gallery3') {
-          // Première section : Mon Parcours
-          const textDiv5 = document.createElement('div');
-          textDiv5.innerHTML = `
-            <form>
-              <div class="name"> 
-                <label for="name"></label>
-                <input type="text" id="name" name="name" placeholder="Nom" required>
-              </div>
-              <div class="email"> 
-                <label for="email"></label>
-                <input type="email" id="email" name="email" placeholder="E-mail" required>
-              </div>
-                <div class="phone"> 
-                <label for="phone"></label>
-                <input type="tel" id="phone" name="phone" placeholder="Phone">
-              </div>
-              <div class="message"> 
-                <label for="message"></label>
-                <textarea id="message" name="message" rows="4" cols="50" placeholder="Votre message" required></textarea>
-              </div>
-                <input type="submit" class="botn" value="Envoyer">
-            </form>
-            `
-            textDiv5.classList.add('gallery5-text');
-            galleryWrapper.appendChild(textDiv5);
         }
 
     // Ajouter une description pour la galerie 1
