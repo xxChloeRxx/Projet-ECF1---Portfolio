@@ -16,13 +16,23 @@
         <header>
              <!-- NAV -->
             <nav id="menu">
-                <h2 data-gallery="gallery1" class="glow">Mes Realisations</h2>
-                <h2 data-gallery="gallery2" class="glow">Mon CV</h2>
-                <a href="index.html" class="glow">Accueil</a>
+              <a href="index.html" class="glow">Accueil</a>
+              <h2 data-gallery="gallery1" class="glow">Mes Realisations</h2>
+              <h2 data-gallery="gallery2" class="glow">Mon CV</h2>
+              <a href="contact.html" class="glow">Me Contacter</a>
             </nav>
         </header>
+
   <main aria-label="Formulaire de contact">
-        <h2 class="glow">Me contacter</h2>
+      <!-- CONTENU DYNAMIQUE -->
+      <div id="nav-content" class="fade-in glow">
+      <div data-gallery="gallery1">
+      <!-- Contenu de la galerie 1 -->
+      </div>
+      <div data-gallery="gallery2">
+            <!-- Contenu de la galerie 2 -->
+      </div>   
+        <h2 class="glow">&lt; Me contacter &gt;</h2>
     <form aria-labelledby="contact-heading">
         <div class="name"> 
           <label for="name" aria-label="Nom"></label>
@@ -51,7 +61,7 @@
     <!-- SCRIPT JS-->
     <script src="js/frameworks/bootstrap.bundle.min.js" defer></script>
     <script src="js/frameworks/jquery.min.js" defer></script>
-    <script src="js/main.js" defer></script>
+    <script src="js/contact.js" defer></script>
 
     </body>
 </html> 

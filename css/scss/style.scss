@@ -47,6 +47,10 @@ html {
           display: flex;
           flex-direction: column;
           align-items: center;
+          h1{
+            text-align: center;
+            padding-top: 1em;
+          }
             .cont-1 {
                 margin-top: 6em;
                 display: flex;
@@ -65,11 +69,15 @@ html {
                       h1, h2, h3{
                             font-family: 'Nico', sans-serif;
                             text-decoration: underline;
+                            text-align: center;
                         }
                       #portrait{
                             @include roundBorder;
                             width: 30%;
                         }
+                    }
+                    h2{
+                      text-align: center;
                     }
             #nav-content{
                 margin-top: 6em;
@@ -167,17 +175,18 @@ html {
                   margin-bottom: 5em;
                   padding: 1em;
                     h2{
-                      margin-bottom: 1em;
+                      margin-bottom: 2em;
                       text-decoration: underline;
                       font-family: 'Nico', sans-serif;
                     }
                 }
                 .gallery2-text{
                   text-align: center;
-                  margin-bottom: 5em;
+                  margin-bottom: 3em;
+                  margin-top: 9em;
                   padding: 1em;
                     h2{
-                      margin-bottom: 1em;
+                      margin-bottom: 2em;
                       text-decoration: underline;
                       font-family: 'Nico', sans-serif;
                     }
@@ -190,10 +199,11 @@ html {
                 .gallery3-text{
                   text-align: center;
                   margin-bottom: 3em;
+                  margin-top: 9em;
                   padding: 1em;
                  
                     h2{
-                      margin-bottom: 1em;
+                      margin-bottom: 2em;
                       text-decoration: underline;
                       font-family: 'Nico', sans-serif;
                     }
@@ -211,9 +221,9 @@ html {
                 }
                 .gallery4-text{
                   margin-bottom: 3em;
-                  margin-top: 4em;
+                  margin-top: 9em;
                      h2{
-                      margin-bottom: 1em;
+                      margin-bottom: 2em;
                       text-decoration: underline;
                       font-family: 'Nico', sans-serif;
                     }
@@ -228,9 +238,10 @@ html {
                     .job2{
                         margin-left: 10em;
                     }
-                    button{
+                    a{
+                        text-decoration: none;
                         @include button-style;
-                        margin-left: 25em;
+                        margin-left: 28.5em;
                         margin-top: 3em;
                     }
                   }
@@ -292,10 +303,12 @@ html {
         border-radius: 0.3em;
     }
       .botn{
-        margin-left: 35em;
+        margin-left: 34em;
+        margin-bottom: 14em;
         text-decoration: none;
         @include button-style;
       }
+
       
   }
   footer{
@@ -332,7 +345,6 @@ html {
 
       h2 {
         font-size: 1.2em;
-        margin: 10px 0;
       }
     }
   }
@@ -441,7 +453,7 @@ html {
   
 /* ANNIMATIONS */
   .glow{
-  animation: glow 1.5s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
     }
       @keyframes glow {
         0% {

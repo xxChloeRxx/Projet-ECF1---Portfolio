@@ -345,17 +345,3 @@ const elements = document.querySelectorAll('.slide-element');
 elements.forEach((element) => { //Ajoute un gestionnaire d'événement pour chaque élément
   observer.observe(element);
 });
-
-
-//Fonction pour créer un bouton confirmation de formulaire
-document.getElementById('submitBtn').addEventListener('click', function() {
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
-
-  if (name && email && message) {
-      alert(`Merci, ${name} ! Votre message a été envoyé avec succès.`);
-  } else {
-      alert("Veuillez remplir tous les champs obligatoires.");
-  }
-});

@@ -52,6 +52,10 @@ html body main {
   flex-direction: column;
   align-items: center;
 }
+html body main h1 {
+  text-align: center;
+  padding-top: 1em;
+}
 html body main .cont-1 {
   margin-top: 6em;
   display: flex;
@@ -71,11 +75,15 @@ html body main .cont-1 .insCont-1 h1 {
 html body main .cont-1 h1, html body main .cont-1 h2, html body main .cont-1 h3 {
   font-family: "Nico", sans-serif;
   text-decoration: underline;
+  text-align: center;
 }
 html body main .cont-1 #portrait {
   border-radius: 50em;
   border: 0.5em solid rgb(255, 0, 94);
   width: 30%;
+}
+html body main h2 {
+  text-align: center;
 }
 html body main #nav-content {
   margin-top: 6em;
@@ -178,17 +186,18 @@ html body main .gallery-wrapper .gallery1-text {
   padding: 1em;
 }
 html body main .gallery-wrapper .gallery1-text h2 {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   text-decoration: underline;
   font-family: "Nico", sans-serif;
 }
 html body main .gallery-wrapper .gallery2-text {
   text-align: center;
-  margin-bottom: 5em;
+  margin-bottom: 3em;
+  margin-top: 9em;
   padding: 1em;
 }
 html body main .gallery-wrapper .gallery2-text h2 {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   text-decoration: underline;
   font-family: "Nico", sans-serif;
 }
@@ -200,10 +209,11 @@ html body main .gallery-wrapper .gallery2-text .fa, html body main .gallery-wrap
 html body main .gallery-wrapper .gallery3-text {
   text-align: center;
   margin-bottom: 3em;
+  margin-top: 9em;
   padding: 1em;
 }
 html body main .gallery-wrapper .gallery3-text h2 {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   text-decoration: underline;
   font-family: "Nico", sans-serif;
 }
@@ -220,10 +230,10 @@ html body main .gallery-wrapper .gallery3-text ul li {
 }
 html body main .gallery-wrapper .gallery4-text {
   margin-bottom: 3em;
-  margin-top: 4em;
+  margin-top: 9em;
 }
 html body main .gallery-wrapper .gallery4-text h2 {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   text-decoration: underline;
   font-family: "Nico", sans-serif;
 }
@@ -238,7 +248,8 @@ html body main .gallery-wrapper .gallery4-text .job1 {
 html body main .gallery-wrapper .gallery4-text .job2 {
   margin-left: 10em;
 }
-html body main .gallery-wrapper .gallery4-text button {
+html body main .gallery-wrapper .gallery4-text a {
+  text-decoration: none;
   padding: 0.5em;
   font-family: "Nico";
   font-weight: bolder;
@@ -246,10 +257,10 @@ html body main .gallery-wrapper .gallery4-text button {
   background-color: rgb(255, 0, 94);
   border: 0.5em groove rgb(255, 0, 94);
   transition: transform 0.3s ease;
-  margin-left: 25em;
+  margin-left: 28.5em;
   margin-top: 3em;
 }
-html body main .gallery-wrapper .gallery4-text button:hover {
+html body main .gallery-wrapper .gallery4-text a:hover {
   transform: scale(1.1);
   color: #000000;
   background-color: #C6024A;
@@ -314,7 +325,8 @@ html body input, html body select, html body textarea {
   border-radius: 0.3em;
 }
 html body .botn {
-  margin-left: 35em;
+  margin-left: 34em;
+  margin-bottom: 14em;
   text-decoration: none;
   padding: 0.5em;
   font-family: "Nico";
@@ -360,7 +372,6 @@ html footer a:hover {
   }
   header #menu h2 {
     font-size: 1.2em;
-    margin: 10px 0;
   }
   main {
     padding: 3em;
@@ -433,7 +444,7 @@ html footer a:hover {
 }
 /* ANNIMATIONS */
 .glow {
-  animation: glow 1.5s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
