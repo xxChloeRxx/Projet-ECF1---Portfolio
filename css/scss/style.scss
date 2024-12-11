@@ -123,9 +123,18 @@ html {
                     background-color: $darker-accent;
                   }
                   .gallery-caption {
+                    font-size: 1em;
+                    margin-top: 0.5em;
                     text-align: center;
                     margin-top: 0.5em;
                 } 
+                  .gallery-text{
+                    font-size: 1.3em;
+                    margin-top: 2em;
+                    margin-bottom: 2em;
+                    @include borderR;
+                    width: 33em;
+                  }
                 #mainCarousel{
                   .carousel-caption{
                       color: $accent;
@@ -207,6 +216,21 @@ html {
                       text-decoration: underline;
                       font-family: 'Nico', sans-serif;
                     }
+                    p{
+                        font-size: 1.4em;
+                        margin-left: 2em;
+                    }                        
+                    .job1{
+                        margin-left: 3em;
+                    }
+                    .job2{
+                        margin-left: 6em;
+                    }
+                    button{
+                        @include button-style;
+                        margin-left: 25em;
+                        margin-top: 3em;
+                    }
                   }
               }
          }
@@ -263,12 +287,7 @@ html {
     }
       .botn{
         margin-left: 13em;
-        padding: 1em;
-        background-color: $accent !important;
-        font-family: 'Nico', sans-serif;
-      }
-      .botn:hover{
-        background-color: $darker-accent;
+        @include button-style;
       }
       
   }

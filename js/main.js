@@ -120,9 +120,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <h2>Experiences</h2>
             <p>2022 - SERVEUSE/BARISTA
             </p>
-            <p>2023 - AGENT D’ENTRETIEN PARTICULIERS
+            <p class="job1">2023 - AGENT D’ENTRETIEN PARTICULIERS
             </p>
-            <p>2020 - 2023 FREELANCE ARTS ET DESIGN
+            <p class="job2">2020 - 2023 FREELANCE ARTS ET DESIGN
             </p>
             <button>Telecharger mon CV</button>
           `;
