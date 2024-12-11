@@ -12,18 +12,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const galleryId = item.getAttribute('data-gallery');
         console.log(`Clicked menu item: ${item.textContent}, Gallery ID: ${galleryId}`);
 
-        // Créer et montrer la galerie dynamique
-        const gallery = createGallery(galleryId);
-
-        // Cacher les sections de la page qui sont statiques
+        // Masquer toutes les sections statiques
         pageSections.forEach(section => {
           section.style.display = 'none';
         });
 
-        // Montrer la galerie et ses sections dynamiques
-        galleryContent.style.display = 'block';
-        galleryContent.innerHTML = ''; // Efface le contenu existant de la galerie
-        galleryContent.appendChild(gallery); // Ajoute la galerie créée au contenu de la galerie
+        // Créer la galerie et l'afficher dans `nav-content`
+        const gallery = createGallery(galleryId);
+        galleryContent.innerHTML = ''; // Efface le contenu existant
+        galleryContent.appendChild(gallery);
+        galleryContent.style.display = 'block'; // Affiche `nav-content`
       });
     });
   }
@@ -124,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </p>
             <p class="job2">2020 - 2023 FREELANCE ARTS ET DESIGN
             </p>
-            <a href>Telecharger mon CV</a>
+            <a href='assets/images/CV.pdf' alt='lien dl cv' class='botn'>Telecharger mon CV</a>
           `;
           textDiv4.classList.add('gallery4-text');
           galleryWrapper.appendChild(textDiv4);
@@ -344,18 +342,4 @@ const observer = new IntersectionObserver((entries) => {
 const elements = document.querySelectorAll('.slide-element');
 elements.forEach((element) => { //Ajoute un gestionnaire d'événement pour chaque élément
   observer.observe(element);
-});
-
-
-//Fonction pour créer un bouton confirmation de formulaire
-document.getElementById('submitBtn').addEventListener('click', function() {
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
-
-  if (name && email && message) {
-      alert(`Merci, ${name} ! Votre message a été envoyé avec succès.`);
-  } else {
-      alert("Veuillez remplir tous les champs obligatoires.");
-  }
 });
