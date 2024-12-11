@@ -300,6 +300,10 @@ html body input#name, html body input#email, html body input#phone {
   width: 31em;
   color: rgb(255, 0, 94) !important;
 }
+html body textarea#message {
+  color: rgb(255, 0, 94);
+  margin-left: 0.5em;
+}
 html body input, html body select, html body textarea {
   margin-top: 2em;
   padding: 1em;
