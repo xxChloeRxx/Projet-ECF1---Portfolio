@@ -1,0 +1,48 @@
+* {
+    /*margin: 2px;
+    padding: 2px;*/
+}
+
+header{
+    border: 2px solid red;
+}
+
+footer{
+    border: 2px solid blue;
+}
+
+main{
+    border: 2px solid yellow;
+}
+
+div{
+    border: 2px solid purple;
+}
+
+h1{
+    border: 2px solid black;
+}
+
+h2, h3, h4{
+    border: 2px dotted green;
+}
+
+p{
+    border: 2px solid pink;
+}
+
+img{
+    border: 2px solid orange;
+}
+
+button{
+    border: 2px solid burlywood;
+}
+
+blockquote{
+    border: 2px solid brown;
+}
+
+nav{
+    border: 2px solid blueviolet;
+}

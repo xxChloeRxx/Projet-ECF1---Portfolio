@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html  lang="fr">
+<head>
+    <title>Contact - AFPA</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <!--<link rel="stylesheet" href="css/zoningcss.css">-->
+</head>
+ 
+<body>
+    <!-- header 
+        avec logo à gauche puis menu déroulant pour la navigation avec barre de recherche et picto login à droite
+    -->
+    <header class="header_hp">
+        <nav>
+            <img src="assets/afpa.png" alt="logo AFPA" class="logo">
+            <div class="links">
+                <a href="index.html">Accueil</a>
+                <a href="Training.html">Nos Formations</a>
+                <a href="Testimonies.html">Témoignages</a>
+            </div>
+            <input type="search" name="recherche" class="searchbox" placeholder="Rechercher...">
+        </nav>
+    </header>
+    <!-- fin header-->
+
+<!--<main catégorie avec formulaire contenant zone de texte, menu déroulant et zone de saisie>-->
+        <main>
+            <h1>AFPA - Contact</h1>
+            <p >*champs obligatoires</p>
+            <div class="formulaire">   
+            <div class="row1">
+                <p>Nom*</p>
+                    <input type="text" name="name" placeholder="Entrer nom">
+                <p>Email*</p>
+                    <input type="text" name="mail" placeholder="Entrer email">
+                <p>Votre région d'origine*</p>
+                    <select name="state">
+                        <option value="loire">Centre-Val de Loire</option>
+                        <option value="est">Grand Est</option>
+                        <option value="haut">Hauts-de-France</option>
+                        <option value="ile">Ile-de-France</option>
+                    </select>
+                </div>
+                <div class="row2">
+                    <p>Prénom*</p>
+                        <input type="text" name="firstname" placeholder="Entrer prénom">
+                    <p>Téléphone*</p>
+                        <input type="text" name="phone" placeholder="Entrer téléphone">
+                    <p>Message</p>
+                        <textarea name="Message" rows="5" cols="30" placeholder="Entrer message"></textarea>
+                </div>
+                <div class="row3">
+            <p>Votre situation*</p>
+                    <select name="situation">
+                        <option value="demandeur">Demandeur d'emploi</option>
+                        <option value="salarie">Salarié en transition professionnelle</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                <p>Modalités d'apprentissage*</p>
+                    <select name="training">
+                        <option value="distance">100% distance</option>
+                        <option value="Apprentissage">En centre de formation (présentiel)</option>
+                        <option value="alternance">En contrat d'alternance avec l'entreprise</option>
+                        <option value="sanspreferance">Sans préférence</option>
+                    </select>
+                </div>
+            </div>
+            <div class="button_form">
+                <input type="submit" value="Envoyer" class="button_form">
+            </div>
+        </main>
+        <!-- fin main-->
+
+    <!--<footer qui redirige vers la page partners et contact>-->
+        <footer class="footer">
+            <ul>
+                <li ><a href="Partners.html">Références</a></li>
+                <li>|</li>
+                <li><a href="Contact.html">Nous Contacter</a></li>
+            </ul> 
+    </footer>
+    <!-- fin footer-->
+        </body>
+        </html>
