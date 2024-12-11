@@ -47,6 +47,10 @@ html {
           display: flex;
           flex-direction: column;
           align-items: center;
+          h1{
+            text-align: center;
+            padding-top: 1em;
+          }
             .cont-1 {
                 margin-top: 6em;
                 display: flex;
@@ -65,11 +69,15 @@ html {
                       h1, h2, h3{
                             font-family: 'Nico', sans-serif;
                             text-decoration: underline;
+                            text-align: center;
                         }
                       #portrait{
                             @include roundBorder;
                             width: 30%;
                         }
+                    }
+                    h2{
+                      text-align: center;
                     }
             #nav-content{
                 margin-top: 6em;
@@ -123,9 +131,18 @@ html {
                     background-color: $darker-accent;
                   }
                   .gallery-caption {
+                    font-size: 1em;
+                    margin-top: 0.5em;
                     text-align: center;
                     margin-top: 0.5em;
                 } 
+                  .gallery-text{
+                    font-size: 1.3em;
+                    margin-top: 2em;
+                    margin-bottom: 2em;
+                    @include borderR;
+                    width: 33em;
+                  }
                 #mainCarousel{
                   .carousel-caption{
                       color: $accent;
@@ -155,10 +172,10 @@ html {
                 }
                 .gallery1-text{
                   @include borderR;
-                  margin-bottom: 3em;
+                  margin-bottom: 5em;
                   padding: 1em;
                     h2{
-                      margin-bottom: 1em;
+                      margin-bottom: 2em;
                       text-decoration: underline;
                       font-family: 'Nico', sans-serif;
                     }
@@ -166,9 +183,10 @@ html {
                 .gallery2-text{
                   text-align: center;
                   margin-bottom: 3em;
+                  margin-top: 9em;
                   padding: 1em;
                     h2{
-                      margin-bottom: 1em;
+                      margin-bottom: 2em;
                       text-decoration: underline;
                       font-family: 'Nico', sans-serif;
                     }
@@ -181,10 +199,11 @@ html {
                 .gallery3-text{
                   text-align: center;
                   margin-bottom: 3em;
+                  margin-top: 9em;
                   padding: 1em;
                  
                     h2{
-                      margin-bottom: 1em;
+                      margin-bottom: 2em;
                       text-decoration: underline;
                       font-family: 'Nico', sans-serif;
                     }
@@ -202,10 +221,28 @@ html {
                 }
                 .gallery4-text{
                   margin-bottom: 3em;
+                  margin-top: 9em;
                      h2{
-                      margin-bottom: 1em;
+                      margin-bottom: 2em;
                       text-decoration: underline;
                       font-family: 'Nico', sans-serif;
+                    }
+                    p{
+                        font-size: 1.4em;
+                        margin-left: 2em;
+                        margin-bottom: 3em;
+                    }                        
+                    .job1{
+                        margin-left: 5em;
+                    }
+                    .job2{
+                        margin-left: 10em;
+                    }
+                    a{
+                        text-decoration: none;
+                        @include button-style;
+                        margin-left: 28.5em;
+                        margin-top: 3em;
                     }
                   }
               }
@@ -250,10 +287,14 @@ html {
           box-shadow: 0 6px 12px $darker-accent; 
           transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
-      input#name, input#email, input#phone {
+      input#name, input#email, input#phone{
         width: 31em;
         color: $accent!important;
     }
+      textarea#message{
+        color: $accent;
+        margin-left: 0.5em;
+      }
       input, select, textarea{
         margin-top: 2em;
         padding: 1em;
@@ -262,14 +303,12 @@ html {
         border-radius: 0.3em;
     }
       .botn{
-        margin-left: 13em;
-        padding: 1em;
-        background-color: $accent !important;
-        font-family: 'Nico', sans-serif;
+        margin-left: 34em;
+        margin-bottom: 14em;
+        text-decoration: none;
+        @include button-style;
       }
-      .botn:hover{
-        background-color: $darker-accent;
-      }
+
       
   }
   footer{
@@ -306,7 +345,6 @@ html {
 
       h2 {
         font-size: 1.2em;
-        margin: 10px 0;
       }
     }
   }
@@ -415,7 +453,7 @@ html {
   
 /* ANNIMATIONS */
   .glow{
-  animation: glow 1.5s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
     }
       @keyframes glow {
         0% {
@@ -483,9 +521,3 @@ html {
     transform: translateX(0);
   }
   
-      
-=======
-@use 'mixins';
-@use 'fonts';
-@use 'extends';
-@use 'colors';

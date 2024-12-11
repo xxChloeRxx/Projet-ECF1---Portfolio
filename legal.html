@@ -5,29 +5,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio - ROORYCK Chloé</title>
         <link rel="icon" href="assets/images/favicon.png">
+        <link rel="stylesheet" href="css/normalize.css">
         <!-- <link rel="stylesheet" href="css/zoning.css"> -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="css/scss/style.css">
-    </head>
+        <link rel="stylesheet" href="css/frameworks/bootstrap.min.css">
+        <link rel="stylesheet" href="css/frameworks/bootstrap.min.css.map">
+        <link rel="stylesheet" href="css/frameworks/fontawesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
     <body>
         <header>
              <!-- NAV -->
              <header>
                 <!-- NAV -->
-               <nav id="menu">
-                   <h2 data-gallery="gallery1" class="glow">Mes Realisations</h2>
-                   <h2 data-gallery="gallery2" class="glow">Mon CV</h2>
-                   <a href="contact.html" class="glow">Me Contacter</a>
-               </nav>
+                <nav id="menu">
+                    <a href="index.html" class="glow">Accueil</a>
+                    <h2 data-gallery="gallery1" class="glow">Mes Realisations</h2>
+                    <h2 data-gallery="gallery2" class="glow">Mon CV</h2>
+                    <a href="contact.html" class="glow">Me Contacter</a>
+                  </nav>
            </header>
         </header>
-        <main>        
+        <main aria-label="Contenu principal">        
                 <!-- CONTENU DYNAMIQUE -->
-            <div id="nav-content" class="fade-in glow"></div>   
+                <div id="nav-content" class="fade-in glow">
+                <div data-gallery="gallery1">
+                <!-- Contenu de la galerie 1 -->
+                </div>
+                <div data-gallery="gallery2">
+                      <!-- Contenu de la galerie 2 -->
+                </div>   
              <!-- CONTENU PAGE -->
-            <h1 class="glow">< Mention Legales ></h1>
+            <h1 class="glow">&lt; Mention Legales &gt;</h1>
             <section class="cont-2 slide-element slide-left">
                     <h2 class="glow">Propriete intellectuelle :</h2>
                     <p>
@@ -49,10 +56,9 @@
             <a href="legal.html">Mentions legales</a>
         </footer> 
     <!-- SCRIPT JS-->
-        <script src="https://kit.fontawesome.com/af0a19b305.js" crossorigin="anonymous" defer></script>
-        <script src="js/framework/bootstrap.bundle.min.js" defer></script>
-        <script src="js/framework/jquery.min.js" defer></script>
-        <script src="js/main.js" defer></script>
+    <script src="js/frameworks/bootstrap.bundle.min.js" defer></script>
+    <script src="js/frameworks/jquery.min.js" defer></script>
+    <script src="js/legal.js" defer></script>
 
     </body>
 </html>
