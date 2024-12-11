@@ -325,7 +325,7 @@ html body input, html body select, html body textarea {
   border-radius: 0.3em;
 }
 html body .botn {
-  margin-left: 34em;
+  margin-left: 12em;
   margin-bottom: 14em;
   text-decoration: none;
   padding: 0.5em;
@@ -399,6 +399,8 @@ html footer a:hover {
   main .gallery-wrapper .gallery-text {
     width: 100%;
     padding: 1em;
+    margin-bottom: 6em;
+    margin-top: 6em;
   }
   main .cont-2, main .cont-3 {
     margin: 2em 0;

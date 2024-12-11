@@ -303,7 +303,7 @@ html {
         border-radius: 0.3em;
     }
       .botn{
-        margin-left: 34em;
+        margin-left: 12em;
         margin-bottom: 14em;
         text-decoration: none;
         @include button-style;
@@ -381,6 +381,8 @@ html {
       .gallery-text {
         width: 100%;
         padding: 1em;
+        margin-bottom: 6em;
+        margin-top: 6em;
       }
     }
 
