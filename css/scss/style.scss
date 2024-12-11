@@ -274,10 +274,14 @@ html {
           box-shadow: 0 6px 12px $darker-accent; 
           transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
-      input#name, input#email, input#phone {
+      input#name, input#email, input#phone{
         width: 31em;
         color: $accent!important;
     }
+      textarea#message{
+        color: $accent;
+        margin-left: 0.5em;
+      }
       input, select, textarea{
         margin-top: 2em;
         padding: 1em;
