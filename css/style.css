@@ -20,12 +20,13 @@ html body header {
 html body header #menu {
   font-family: "Nico";
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   list-style-type: none;
   padding-top: 3em;
 }
 html body header #menu h2 {
   color: rgb(255, 0, 94);
+  font-size: 1.5em;
   text-align: center;
   color: rgb(255, 0, 94);
   margin: 0 15px;
@@ -35,6 +36,12 @@ html body header #menu h2 {
 }
 html body header #menu h2.active {
   color: #C6024A;
+}
+html body header a {
+  text-decoration: none;
+  color: rgb(255, 0, 94);
+  font-size: 1.5em;
+  margin-top: 0.3em;
 }
 html body main {
   background-color: #000000;
@@ -46,7 +53,7 @@ html body main {
   align-items: center;
 }
 html body main .cont-1 {
-  margin-top: 7em;
+  margin-top: 6em;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -70,31 +77,43 @@ html body main .cont-1 #portrait {
   border: 0.5em solid rgb(255, 0, 94);
   width: 30%;
 }
-html body main .gallery {
-  display: flex;
-  justify-content: center;
+html body main #nav-content {
+  margin-top: 6em;
+}
+html body main #nav-content .gallery {
   flex-wrap: wrap;
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
 }
-html body main .gallery img {
+html body main #nav-content .gallery img {
   width: 100%;
 }
-html body main .gallery .gallery-item {
+html body main #nav-content .gallery .gallery-item {
+  max-width: 100%;
   width: 100%;
   height: auto;
   display: block;
-  border: 2px solid rgb(255, 0, 94);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 0.5em groove rgb(255, 0, 94);
+  box-shadow: 0 4px 8px #C6024A;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-html body main .gallery .gallery-item:hover {
+html body main #nav-content .gallery .gallery-item:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px #C6024A;
 }
-html body main .real {
+html body main .gallery-wrapper {
+  padding: 20px;
+}
+html body main .gallery-wrapper h3 {
+  margin-bottom: 2em;
+  text-align: center;
+  font-family: "Nico", sans-serif;
+  font-size: 1.7em;
+  text-decoration: underline;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+html body main .gallery-wrapper .real {
   width: 200px;
   height: 200px;
   margin: 10px;
@@ -106,10 +125,95 @@ html body main .real {
   font-size: 18px;
   transition: all 0.3s ease;
 }
-html body main .real:hover {
+html body main .gallery-wrapper .real:hover {
   background-color: #C6024A;
 }
-html body main .cont-2 {
+html body main .gallery-wrapper .gallery-caption {
+  text-align: center;
+  margin-top: 0.5em;
+}
+html body main .gallery-wrapper #mainCarousel .carousel-caption {
+  color: rgb(255, 0, 94);
+  font-size: 0.7em;
+  background-color: rgba(2, 0, 0, 0.7);
+  border: rgb(255, 0, 94) solid 0.2em;
+  border-radius: 2em;
+}
+html body main .gallery-wrapper #mainCarousel .carousel-caption a {
+  text-decoration: none;
+  color: rgb(255, 0, 94);
+}
+html body main .gallery-wrapper #mainCarousel .carousel-caption a:hover {
+  text-decoration: underline;
+}
+html body main .gallery-wrapper .carousel-control-prev-icon,
+html body main .gallery-wrapper .carousel-control-next-icon {
+  background-color: rgb(255, 0, 94);
+}
+html body main .gallery-wrapper .gallery-text p {
+  border-left: 0.5em groove rgb(255, 0, 94);
+  border-bottom: 0.5em groove rgb(255, 0, 94);
+  margin-top: 2em;
+  width: 28em;
+  padding: 0.5em;
+  margin-bottom: 4em;
+}
+html body main .gallery-wrapper .gallery1-text {
+  border-right: 0.5em groove rgb(255, 0, 94);
+  border-bottom: 0.5em groove rgb(255, 0, 94);
+  margin-bottom: 3em;
+  padding: 1em;
+}
+html body main .gallery-wrapper .gallery1-text h2 {
+  margin-bottom: 1em;
+  text-decoration: underline;
+  font-family: "Nico", sans-serif;
+}
+html body main .gallery-wrapper .gallery2-text {
+  text-align: center;
+  margin-bottom: 3em;
+  padding: 1em;
+}
+html body main .gallery-wrapper .gallery2-text h2 {
+  margin-bottom: 1em;
+  text-decoration: underline;
+  font-family: "Nico", sans-serif;
+}
+html body main .gallery-wrapper .gallery2-text .fa, html body main .gallery-wrapper .gallery2-text .fas, html body main .gallery-wrapper .gallery2-text .fa-brands {
+  font-size: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+html body main .gallery-wrapper .gallery3-text {
+  text-align: center;
+  margin-bottom: 3em;
+  padding: 1em;
+}
+html body main .gallery-wrapper .gallery3-text h2 {
+  margin-bottom: 1em;
+  text-decoration: underline;
+  font-family: "Nico", sans-serif;
+}
+html body main .gallery-wrapper .gallery3-text ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+html body main .gallery-wrapper .gallery3-text ul li {
+  margin-right: 1em;
+  font-size: 1.2em;
+}
+html body main .gallery-wrapper .gallery4-text {
+  margin-bottom: 3em;
+}
+html body main .gallery-wrapper .gallery4-text h2 {
+  margin-bottom: 1em;
+  text-decoration: underline;
+  font-family: "Nico", sans-serif;
+}
+html body .cont-2 {
   border-right: 0.5em groove rgb(255, 0, 94);
   border-bottom: 0.5em groove rgb(255, 0, 94);
   margin-top: 15em;
@@ -117,15 +221,15 @@ html body main .cont-2 {
   width: 34em;
   margin-right: 30em;
 }
-html body main .cont-2 h2 {
+html body .cont-2 h2 {
   text-align: start;
   text-decoration: underline;
   margin-bottom: 1em;
 }
-html body main .cont-2 p {
+html body .cont-2 p {
   text-align: end;
 }
-html body main .cont-3 {
+html body .cont-3 {
   margin-top: 10em;
   padding: 1em;
   border-left: 0.5em groove rgb(255, 0, 94);
@@ -133,76 +237,65 @@ html body main .cont-3 {
   width: 34em;
   margin-left: 30em;
 }
-html body main .cont-3 h2 {
+html body .cont-3 h2 {
   text-align: end;
   text-decoration: underline;
 }
-html body main .cont-3 p {
+html body .cont-3 p {
   text-align: start;
-}
-html body footer {
-  text-align: center;
-  text-decoration: none;
   padding-top: 1.5em;
 }
-html body footer a {
-  color: #000000;
-  text-decoration: none;
-  font-family: "Jet", sans-serif;
-  font-weight: bolder;
+html body .carousel img {
+  border: 0.5em groove rgb(255, 0, 94);
+  box-shadow: 0 4px 8px #C6024A;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.gallery {
+html body .carousel img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px #C6024A;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+html body input#name, html body input#email, html body input#phone {
+  width: 31em;
+  color: rgb(255, 0, 94) !important;
+}
+html body input, html body select, html body textarea {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: #000000;
+  border: #C6024A solid 0.2em;
+  border-radius: 0.3em;
+}
+html body .botn {
+  margin-left: 13em;
+  padding: 1em;
+  background-color: rgb(255, 0, 94) !important;
+  font-family: "Nico", sans-serif;
+}
+html body .botn:hover {
+  background-color: #C6024A;
+}
+html footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.real {
-  width: 200px;
-  height: 200px;
-  margin: 10px;
-  background-color: rgb(255, 0, 94);
-  display: flex;
-  justify-content: center;
   align-items: center;
-  color: white;
-  font-size: 18px;
-  transition: all 0.3s ease;
+  text-decoration: none;
+  padding-top: 1.5em;
+  background-color: rgb(255, 0, 94);
 }
-
-.real:hover {
-  background-color: #C6024A;
+html footer a {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Nico", sans-serif;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+html footer a:hover {
+  text-decoration: underline;
 }
 
 /* ANNIMATIONS */
-.bounce {
-  display: inline-block;
-  animation: bounce 1s ease infinite;
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-30px);
-  }
-}
-.spinning {
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .glow {
   animation: glow 1.5s ease-in-out infinite alternate;
 }
@@ -234,27 +327,6 @@ html body footer a {
     opacity: 0;
   }
 }
-.typewriting {
-  border-right: 4px solid rgb(255, 0, 94);
-  width: 2ch;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 4s steps(20) 1s 1 normal both, blink 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 34ch;
-  }
-}
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
 .fade-in {
   opacity: 0;
   animation: fadeIn 2s ease-in forwards;
@@ -267,4 +339,19 @@ html body footer a {
   100% {
     opacity: 1;
   }
+}
+.slide-element {
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-left {
+  transform: translateX(-100%);
+}
+
+.slide-right {
+  transform: translateX(100%);
+}
+
+.in-view {
+  transform: translateX(0);
 }/*# sourceMappingURL=style.css.map */
