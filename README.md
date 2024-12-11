@@ -8,7 +8,6 @@ Voici un aperçu de la structure du répertoire du projet :
  ```
 /Projet-ECF1---Portfolio
     /docs                           # Documentations du projet
-    /public
         /assets
             /images
             /movies
@@ -67,8 +66,8 @@ Pour compiler et minifier vos fichiers SCSS en CSS :
 
    ```bash
    sass --style=compressed chemin/vers/fichier.scss chemin/vers/sortie.css
+   sass --style=compressed chemin/vers/fichier.scss chemin/vers/sortie.css
    ```
-
    - Remplacez `chemin/vers/fichier.scss` par le chemin vers votre fichier SCSS source.
    - Remplacez `chemin/vers/sortie.css` par le chemin où vous souhaitez enregistrer le fichier CSS compilé.
 

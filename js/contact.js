@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
               </p>
               <p class="job2">2020 - 2023 FREELANCE ARTS ET DESIGN
               </p>
-              <a href='assets/images/CV.pdf' alt='lien dl cv' class='botn'>Telecharger mon CV</a>
+              <a href="../assets/images/cv.pdf" download class="botn">Télécharger mon CV</a>
             `;
             textDiv4.classList.add('gallery4-text');
             galleryWrapper.appendChild(textDiv4);
