@@ -1,11 +1,13 @@
 @mixin borderR{
     border-right: 0.5em groove $accent;
     border-bottom: 0.5em groove $accent;
+    padding: 1em;
 }
 
 @mixin borderL{
     border-left: 0.5em groove $accent;
     border-bottom: 0.5em groove $accent;
+    padding: 1em;
 }
 
 @mixin roundBorder{
@@ -28,14 +30,16 @@
 @mixin button-style{
     padding: 0.5em;
     font-family: 'Nico';
+    font-weight: bolder;
     color: black;
     background-color: $accent;
-    border: 1em groove $accent;
+    border: 0.5em groove $accent;
     @include zoom-effect;
 
     &:hover{
             transform: scale(1.1);
-            color: $accent;
+            color: $primary-color;
+            background-color: $darker-accent;
     }
 }
 

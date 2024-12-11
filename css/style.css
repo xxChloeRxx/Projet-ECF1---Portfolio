@@ -129,8 +129,19 @@ html body main .gallery-wrapper .real:hover {
   background-color: #C6024A;
 }
 html body main .gallery-wrapper .gallery-caption {
+  font-size: 1em;
+  margin-top: 0.5em;
   text-align: center;
   margin-top: 0.5em;
+}
+html body main .gallery-wrapper .gallery-text {
+  font-size: 1.3em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-right: 0.5em groove rgb(255, 0, 94);
+  border-bottom: 0.5em groove rgb(255, 0, 94);
+  padding: 1em;
+  width: 33em;
 }
 html body main .gallery-wrapper #mainCarousel .carousel-caption {
   color: rgb(255, 0, 94);
@@ -153,6 +164,7 @@ html body main .gallery-wrapper .carousel-control-next-icon {
 html body main .gallery-wrapper .gallery-text p {
   border-left: 0.5em groove rgb(255, 0, 94);
   border-bottom: 0.5em groove rgb(255, 0, 94);
+  padding: 1em;
   margin-top: 2em;
   width: 28em;
   padding: 0.5em;
@@ -161,6 +173,7 @@ html body main .gallery-wrapper .gallery-text p {
 html body main .gallery-wrapper .gallery1-text {
   border-right: 0.5em groove rgb(255, 0, 94);
   border-bottom: 0.5em groove rgb(255, 0, 94);
+  padding: 1em;
   margin-bottom: 3em;
   padding: 1em;
 }
@@ -213,9 +226,36 @@ html body main .gallery-wrapper .gallery4-text h2 {
   text-decoration: underline;
   font-family: "Nico", sans-serif;
 }
+html body main .gallery-wrapper .gallery4-text p {
+  font-size: 1.4em;
+  margin-left: 2em;
+}
+html body main .gallery-wrapper .gallery4-text .job1 {
+  margin-left: 3em;
+}
+html body main .gallery-wrapper .gallery4-text .job2 {
+  margin-left: 6em;
+}
+html body main .gallery-wrapper .gallery4-text button {
+  padding: 0.5em;
+  font-family: "Nico";
+  font-weight: bolder;
+  color: black;
+  background-color: rgb(255, 0, 94);
+  border: 0.5em groove rgb(255, 0, 94);
+  transition: transform 0.3s ease;
+  margin-left: 25em;
+  margin-top: 3em;
+}
+html body main .gallery-wrapper .gallery4-text button:hover {
+  transform: scale(1.1);
+  color: #000000;
+  background-color: #C6024A;
+}
 html body .cont-2 {
   border-right: 0.5em groove rgb(255, 0, 94);
   border-bottom: 0.5em groove rgb(255, 0, 94);
+  padding: 1em;
   margin-top: 15em;
   padding: 1em;
   width: 34em;
@@ -234,6 +274,7 @@ html body .cont-3 {
   padding: 1em;
   border-left: 0.5em groove rgb(255, 0, 94);
   border-bottom: 0.5em groove rgb(255, 0, 94);
+  padding: 1em;
   width: 34em;
   margin-left: 30em;
 }
@@ -268,11 +309,17 @@ html body input, html body select, html body textarea {
 }
 html body .botn {
   margin-left: 13em;
-  padding: 1em;
-  background-color: rgb(255, 0, 94) !important;
-  font-family: "Nico", sans-serif;
+  padding: 0.5em;
+  font-family: "Nico";
+  font-weight: bolder;
+  color: black;
+  background-color: rgb(255, 0, 94);
+  border: 0.5em groove rgb(255, 0, 94);
+  transition: transform 0.3s ease;
 }
 html body .botn:hover {
+  transform: scale(1.1);
+  color: #000000;
   background-color: #C6024A;
 }
 html footer {
@@ -295,6 +342,88 @@ html footer a:hover {
   text-decoration: underline;
 }
 
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+  html {
+    margin: 1em;
+  }
+  header #menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  header #menu h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  main {
+    padding: 3em;
+  }
+  main .cont-1 {
+    flex-direction: column;
+  }
+  main .cont-1 #portrait {
+    display: none;
+  }
+  main .cont-1 .insCont-1 {
+    margin-left: 0;
+    align-items: center;
+  }
+  main .cont-1 .insCont-1 h1 {
+    font-size: 1.5em;
+  }
+  main .gallery {
+    grid-template-columns: 1fr;
+    margin: 10px;
+  }
+  main .gallery-wrapper h3 {
+    font-size: 1.2em;
+  }
+  main .gallery-wrapper .gallery-text {
+    width: 100%;
+    padding: 1em;
+  }
+  main .cont-2, main .cont-3 {
+    margin: 2em 0;
+    padding: 1em;
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer a {
+    font-size: 1.2em;
+  }
+  html {
+    margin: 0.5em;
+  }
+  header #menu h2 {
+    font-size: 1em;
+    padding: 5px;
+  }
+  main {
+    padding: 2em;
+  }
+  main .cont-1 .insCont-1 h1 {
+    font-size: 1.2em;
+  }
+  main .cont-1 #portrait {
+    width: 70%;
+  }
+  main .gallery-wrapper h3 {
+    font-size: 1em;
+  }
+  main .gallery-wrapper .gallery-text {
+    width: 90%;
+  }
+  main .cont-2, main .cont-3 {
+    margin: 1em 0;
+    padding: 0.5em;
+  }
+  footer a {
+    font-size: 1em;
+  }
+}
 /* ANNIMATIONS */
 .glow {
   animation: glow 1.5s ease-in-out infinite alternate;
